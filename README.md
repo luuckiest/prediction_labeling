@@ -19,13 +19,13 @@ On the left hand side, the bottoms are corresponding to:
 7 (pitch down most)
 
 On the bottom, the bottoms are corresponding to:
-1 (row left most)
-2 (row left moderate)
-3 (row left low)
-4 (row netural)
-5 (row right low)
-6 (row right moderate)
-7 (row right most)
+1 (roll left most)
+2 (roll left moderate)
+3 (roll left low)
+4 (roll netural)
+5 (roll right low)
+6 (roll right moderate)
+7 (roll right most)
 
 These are potential commands that you want to send it to the robot to gather most information. 
 
