@@ -245,14 +245,14 @@ class Test():
             pass
     def change_img(self):
         global pics,photos_label,label_counter
+        label_path = os.path.join(self.labels_out_dir,photos_label[label_counter].split('\\')[-1]).split('.')[0]+ ".json"
+        with open(label_path, 'w') as fp:
+            json.dump(self.direction_prediction, fp)
+        print(label_counter)
         label_counter+=1
         img=ImageTk.PhotoImage(Image.open(photos_label[label_counter]))
         self.label.configure(image=img)
         self.label.image=img
-        #output file
-        label_path = os.path.join(self.labels_out_dir,photos_label[label_counter].split('\\')[-1]).split('.')[0]+ ".json"
-        with open(label_path, 'w') as fp:
-            json.dump(self.direction_prediction, fp)
         #import pdb; pdb.set_trace()
         #reset_colors
         self.button1.configure(bg="white")
